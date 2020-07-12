@@ -1,0 +1,238 @@
+/* Scale 8pt, 12pt, 18pt, 27pt */
+
+html {
+	background: #f7f7f7 url('images/anni3.jpg') no-repeat bottom right fixed; 
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
+    position: fixed;
+    height: 67.6;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+body {
+	font-family: "SF UI Display", Helvetica, Arial, san-serif;
+	font-weight: 200;
+	font-size: 100%;
+	margin: 13% 2.5%;
+}
+
+img {
+    width: 10%;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags span {
+    border: 0.5px solid #385420;
+    color:  #black;
+    padding: 8px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background-color: white;
+}
+
+/* Bio  */
+
+.biography {
+
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bio span {
+    width: 34px;
+    margin: 0 20px 0 0;
+}
+
+.bio-item {
+    display: flex;
+    margin: 0 0 10px 0;
+}
+
+.bio-content {
+    padding: 20px 20px 20px 20px;
+    background-color: #fcfdfa;
+    border-left: 5px solid  black;
+    flex-grow: 1;
+}
+
+/* End bio  */
+
+#wrapper {
+	background-color: rgba(247, 247, 247, 0.5);
+	padding: 16pt;
+	width: 50%;
+}
+
+p, a, li {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+p {
+	margin: 1em 0;
+}
+
+
+a {
+    color: black;
+    border-bottom: 1px solid #655d5d;
+    padding-bottom: 1px;
+    text-decoration: none;
+}
+
+li:hover {
+	background-color: #d0dab0;
+	text-decoration: none;
+}
+
+li {
+	border-bottom: 1px solid #ccc;
+	padding: 8pt 12pt;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 2em 0 .5em;
+}
+
+ul {
+	font-size: 1.25em;
+	/* margin: 2em 0; */
+}
+
+.title {
+	font-size: 1.125em;
+}
+
+.name {
+	display: block;
+	font-size: 1.125em
+}
+
+.description {
+	font-size: 1em;
+	font-weight: 200;
+}
+
+.date, .publisher {
+	font-size: 1em;
+}
+
+.publisher {
+	font-style: italic;
+	font-weight: 200;
+}
+
+.date {
+	color: grey;
+	font-weight: 200;
+}
+
+#years {
+	text-transform: capitalize;
+}
+
+#intro {
+	font-size: 2em;
+}
+
+/* profiles */
+
+.profile_icons {
+	display: flex;
+    justify-content: space-evenly;
+	width: 100%;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* End profiles */
+
+/* Media Queries */
+@media only screen
+	and (max-width: 1024px) {
+	
+		html {
+			background: #f7f7f7;
+		}
+	
+		body {
+			padding-top: 5em;
+			padding-bottom: 5em;
+			margin: 0 5%;
+		}
+		
+		#wrapper {
+			padding: 0;
+			width: auto;
+		}
+		
+		p, a, li {
+			max-width: none;
+			line-height: 1.25em;
+		}
+		
+		li {
+			padding: 1em .25em;
+		}
+		
+		p {
+			/* margin: 1em auto; */
+		}
+		
+		#greeting:before {
+			background: #f7f7f7 url('images/anni3.jpg') top center no-repeat;
+			background-size: contain;
+			content: "";
+			display: block;
+			height: 350px;
+		}
+		
+	}
+	
+@media only screen 
+  	and (min-device-width: 375px) 
+  	and (max-device-width: 667px) 
+  	and (-webkit-min-device-pixel-ratio: 2) { 
+	  	body {
+			font-size: 100%;
+		}
+		
+		p, a, li {
+			max-width: none;
+		}
+		
+		h2 {
+			font-size: 2em;
+		}
+		
+		#intro:before {
+			height: 700px;
+		}
+  }
