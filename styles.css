@@ -1,4 +1,4 @@
-/* Scale 8pt, 12pt, 18pt, 27pt */
+
 
 html {
 	background: #f7f7f7 url('images/anni3.jpg') no-repeat bottom right fixed; 
@@ -6,7 +6,6 @@ html {
 	-moz-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
-	
 }
 
 header {
@@ -19,13 +18,14 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: white;
+	background-color: white;
 }
+
 
 body {
 	font-family: "SF UI Display", Helvetica, Arial, san-serif;
 	font-weight: 200;
-	font-size: 100%;
+	font-size: 80%;
 	margin: 13% 2.5%;
 }
 
@@ -42,7 +42,7 @@ img {
 }
 
 .tags span {
-    border: 0.5px solid #black;
+    border: 0.5px solid black;
     color:  #black;
     padding: 10px;
     display: inline-block;
@@ -56,7 +56,7 @@ img {
 .biography {
 
     justify-content: space-evenly;
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
@@ -84,6 +84,7 @@ img {
 	background-color: rgba(247, 247, 247, 0.5);
 	padding: 16pt;
 	width: 50%;
+	font-size: 18px;
 }
 
 p, a, li {
@@ -147,6 +148,18 @@ ul {
 	font-weight: 200;
 }
 
+.project {
+	font-size: 18px;
+}
+
+.skills {
+	font-size: 18px;
+}
+
+.interests {
+	font-size: 18px;
+}
+
 .date {
 	color: grey;
 	font-weight: 200;
@@ -172,6 +185,14 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+footer {
+
+	margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 /* End profiles */
@@ -237,7 +258,5 @@ ul {
 		#intro:before {
 			height: 700px;
 		}
-		.tags {
-			font-size: 30px;
-		}
+
   }
